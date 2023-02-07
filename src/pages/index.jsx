@@ -58,7 +58,7 @@ export default function Home({ results }) {
 
 // 서버 사이드에서 데이터를 요청해서 HTML에 저장하는 식으로 작동하여 로딩을 없애주는 작업
 export async function getServerSideProps() {
-  const { results } = await (await fetch(`http://localhost:3000/api/movies`)).json();
+  const { results } = await (await fetch(`https://nextjs-movie-app-lime.vercel.app/api/movies`)).json();
   // config 리다이렉트 설정을 통한 API_KEY 숨기기
 
   return {
