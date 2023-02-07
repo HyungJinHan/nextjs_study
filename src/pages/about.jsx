@@ -1,8 +1,10 @@
+import NavBar from 'components/NavBar';
 import React from 'react';
 
-function about(props) {
+function About(props) {
   return (
     <div>
+      <NavBar />
       <h1>
         About Page
       </h1>
@@ -10,4 +12,4 @@ function about(props) {
   );
 }
 
-export default about;
+export default About;
