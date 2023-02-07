@@ -1,0 +1,12 @@
+.link {
+  text-decoration: none;
+}
+
+.active {
+  color: red;
+  font-weight: bold;
+}
+
+.deactive {
+  color: black;
+}

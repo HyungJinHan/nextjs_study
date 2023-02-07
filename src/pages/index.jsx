@@ -1,4 +1,5 @@
 import NavBar from 'components/NavBar';
+import NavLink from 'components/NavLink';
 import React, { useState } from 'react';
 
 function Index(props) {
@@ -6,7 +7,8 @@ function Index(props) {
 
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
+      <NavLink />
       <h1>
         Main Page {counter}
       </h1>
