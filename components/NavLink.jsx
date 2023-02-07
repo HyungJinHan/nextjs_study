@@ -6,7 +6,6 @@ import vercel from '../public/vercel.svg'
 
 function NavLink(props) {
   const router = useRouter();
-  console.log(router)
 
   return (
     <nav>

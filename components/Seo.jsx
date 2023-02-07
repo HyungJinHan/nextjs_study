@@ -4,7 +4,7 @@ import React from 'react';
 function Seo({ title }) {
   return (
     <Head>
-      <title>{title} | NextJS Movie App</title>
+      <title>{`${title} | NextJS Movie App`}</title>
     </Head>
   );
 }
