@@ -22,8 +22,16 @@ const nextConfig = {
         // 해당 URL을 입력할 경우
         destination: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
         // 해당 URL로 자동 리다이렉트 해줌 (URL 변경 X)
+      },
+      {
+        source: '/api/movies/:id',
+        destination: `https://api.themoviedb.org/3/movie/:id?api_key=${API_KEY}`
+      },
+      {
+        source: '/api/movies/reviews/:id',
+        destination: `https://api.themoviedb.org/3/movie/:id/reviews?api_key=${API_KEY}`
       }
-    ]
+    ];
   }
 }
 

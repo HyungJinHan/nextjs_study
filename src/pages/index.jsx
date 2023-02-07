@@ -1,15 +1,33 @@
 import Seo from 'components/Seo';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
 export default function Home({ results }) {
+  const router = useRouter();
+
+  const onClick = (id, title) => {
+    router.push(`/movies/${title}/${id}`);
+    // 넘겨받은 movie.id를 id로 받아와 라우터 기능으로 URL에 push하기
+    // 마지막에 URL을 원하는 형식으로 마스킹 작업
+  };
+
   return (
     <div className="container">
       <Seo title='Home' />
       {results?.map(
         (movie) => (
-          <div className='movie' key={movie.id}>
+          <div className='movie' key={movie.id} onClick={() => { onClick(movie.id, movie.original_title) }}>
+            {/* movie.id를 클릭하면서 파라미터로 넘겨주기 */}
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt='none' />
-            <h4>{movie.original_title}</h4>
+            <h4>
+              <Link
+                href={`/movies/${movie.original_title}/${movie.id}`}
+                legacyBehavior
+              >
+                <a>{movie.original_title}</a>
+              </Link>
+            </h4>
           </div>
         )
       )}
