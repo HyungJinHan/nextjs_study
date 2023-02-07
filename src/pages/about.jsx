@@ -1,13 +1,13 @@
 import React from 'react';
 
-function index(props) {
+function about(props) {
   return (
     <div>
       <h1>
-        Main Page
+        About Page
       </h1>
-    </div >
+    </div>
   );
 }
 
-export default index;
+export default about;
