@@ -2,14 +2,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
-import vercel from '../public/vercel.svg'
+import vercel from '../public/vercel.svg';
+import next from '../public/next.svg';
 
 function NavLink(props) {
   const router = useRouter();
 
   return (
     <nav>
-      <Image width={100} src={vercel} alt='none' />
+      <Image className='logo' width={100} src={next} alt='none' />
 
       <div>
         <Link legacyBehavior href='/'>
@@ -46,6 +47,9 @@ function NavLink(props) {
         nav div {
           display: flex;
           gap: 10px;
+        }
+        img.logo {
+          display: inline;
         }
       `}</style>
 

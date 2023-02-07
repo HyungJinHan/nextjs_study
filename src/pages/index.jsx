@@ -43,9 +43,10 @@ export default function Home({ results }) {
           border-radius: 12px;
           transition: transform 0.3s ease-in-out;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          cursor: pointer;
         }
         .movie:hover img {
-          transform: scale(1.05) translateY(-10px);
+          transform: scale(1.03) translateY(-10px);
         }
         .movie h4 {
           font-size: 18px;
