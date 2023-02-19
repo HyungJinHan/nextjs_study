@@ -1,11 +1,11 @@
-### <b>영화 DB API를 사용한 간단한 영화 인기순위 사이트</b>
+# <b>영화 DB API를 사용한 간단한 영화 인기순위 사이트</b>
 ### <b>사이트 링크 : [NextJS Movie App](https://nextjs-movie-app-lime.vercel.app/)</b>
 
 핸드폰 사이즈에 맞는 반응형 웹으로 제작
 
 <br>
 
-## 1. Tech
+# 1. Tech
 - Front-End
   <br><br>
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white">&nbsp;
@@ -30,7 +30,7 @@
       
 <br><br>
       
-## 2. Contents
+# 2. Contents
 <div align='center'>
   
   |Main Page|
